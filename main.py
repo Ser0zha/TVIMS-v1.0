@@ -1,12 +1,11 @@
 from generator import generate_barnsley_fern
-from visualizer import plot_fern, plot_density
+from visualizer import plot_interactive_fern
 from analyzer import compute_statistics
 
 if __name__ == "__main__":
     xs, ys = generate_barnsley_fern()
-    plot_fern(xs, ys)
-    plot_density(xs, ys)
-    stats = compute_statistics(xs, ys)
+    plot_interactive_fern(xs, ys)
+    # stats = compute_statistics(xs, ys)
 
     # print("\n--- Статистические характеристики ---")
     # print(f"Математическое ожидание x: {stats['mean_x']:.4f}")
